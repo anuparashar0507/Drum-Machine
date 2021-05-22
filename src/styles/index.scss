@@ -1,0 +1,128 @@
+#container{
+  width:100vw;
+ height:100vh;
+ background-color:black;
+ font-family:sans-serif;
+ font-weight:bold;
+ 
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ 
+}
+#drum-machine{
+ width:380px;
+ height:720px;
+ border-style:solid;
+ border-width:5px;
+ border-radius:15px;
+ border-color:#FF8600;
+ background-color:#27187E ;
+ 
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+}
+#keypad{
+ width:350px;
+ border:solid 3px ;
+ border-radius:5px;
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-gap: 10px;
+ background-color:#758BFD;
+ padding: 10px;
+}
+
+
+.drum-pad{
+width:100px;
+height:100px;
+border:solid 3px #27187E ;
+;
+border-radius:50px;
+margin:0;
+display:flex;
+justify-content:space-around;
+align-items:center;
+background-color:#F1F2F6;
+}
+.clip{
+ width:0px;
+height:0px;
+}
+#display{
+ width:150px;
+ height:60px;
+ border-style:solid;
+ border-color:green;
+ background-color:black;
+ color:lime;
+ margin: -80px 0 60px 0;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ 
+ font-size:1.5rem;
+ font-weight:bold;
+ font-family:monospace;
+}
+#bankSelector{
+ width:60px;
+ height: 40px;
+ margin: 30px 0 30px 0;
+ border-style:solid;
+ appearance: none;
+ background:#FF8600;
+}
+#bankSelector::-webkit-slider-thumb{
+-webkit-appearance: none; /* Override default look */
+ appearance: none;
+ width: 30px; /* Set a specific slider handle width */
+ height: 40px; /* Slider handle height */
+ background: #4CAF50; /* Green background */
+ cursor: pointer; /* Cursor on hover */
+
+}
+#bankSelector:focus{
+outline:none;
+}
+#bankDisplay
+{
+ margin: 30px 0 30px 20px;
+ font-size: large;
+ color: white;
+ width:60px;
+ height: 40px;
+}
+#volumeRange{
+ border-style:solid;
+ width: 300px;
+ height: 40px;
+ border-radius:25px;
+ appearance: none;
+ background:#FF8600;
+ }
+#volumeRange:focus{
+outline:none;
+}
+#volumeDisplay
+{
+margin: -10px 0 0px 10px;
+color: white;
+width:60px;
+height: 40px;
+}
+#volumeRange::-webkit-slider-thumb{
+ appearance: none;
+ width: 40px; /* Set a specific slider handle width */
+ height: 40px; /* Slider handle height */
+ border-radius:50%;
+ background:#5400D3; /* Green background */
+ cursor: pointer; /* Cursor on hover */
+
+}
+/*-----------------------------------------------------------*/
